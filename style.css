@@ -1,9 +1,16 @@
 body {
       margin: 0;
       background: url("https://cdn.jsdelivr.net/gh/medo108/agricbook@refs/heads/medo1/images/ChatGPT%20Image%2028%20%D9%85%D8%A7%D9%8A%D9%88%202025%D8%8C%2011_55_48%20%D8%B5.webp");
-      background-size: cover;
-      overflow: hidden;
+      background-size: contain;
+      /* overflow: hidden; */
       font-family: "Noto Sans Arabic", sans-serif;
+      border: 8px green groove;
+      border-radius: 20px;
+      height: 100vh;
+      background-size: 100% 100%; /* ستريتش الصورة */
+      background-repeat: no-repeat;
+      
+
 
     }
 
@@ -100,7 +107,7 @@ body {
   height: 100px;
   background: linear-gradient(45deg, #C4CAD0, #878C8F);
   border: 5px #A4969B ridge;
-  box-shadow: inset 0px 0px 20px 7px black,  0px 20px 19px 1px black;
+  box-shadow: inset 0px 0px 20px 7px black,  0px 5px 19px 1px black;
   
   margin: auto;
   margin-top: 10px;
@@ -119,4 +126,103 @@ body {
     0 0 20px #40531B,
     0 0 40px #aae72e,
     0 0 80px #40531B;
+    user-select: none;
+
+}
+
+.addemail{
+  margin-left: 25%;
+  margin-right: 25%;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  text-decoration: none;
+  background: linear-gradient(45deg , #BCB8B1, #F4F3EE);
+  border-radius: 50px;
+  z-index: 100;
+  position: relative;
+  z-index: 100;
+  border: 5px #463F3A groove;
+  box-shadow:  0px 5px 19px 1px black;
+  transition: all 0.4s ease;
+  margin-bottom: 40px;
+
+
+  
+
+
+  
+}
+.addemail h3{
+  color: rgb(70, 61, 55);
+  animation: glow 1.6s ease-in-out infinite alternate;
+  text-shadow:
+    0 0 5px rgb(70, 61, 55),
+    0 0 10px #ffb347,
+    0 0 20px #ffb347,
+    0 0 40px #ffcc80,
+    0 0 80px #ffe0b2;
+    user-select: none;
+
+}
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 3px rgb(70, 61, 55),
+      0 0 6px #ffb347,
+      0 0 12px #ffcc80;
+  }
+  to {
+    text-shadow:
+      0 0 8px rgb(70, 61, 55),
+      0 0 16px #ffb347,
+      0 0 32px #ffcc80,
+      0 0 64px #ffe0b2;
+  }
+}
+.addemail:hover{
+  transform: scale(1.2);
+  background: linear-gradient(45deg, #F4F3EE,#E0AFA0);
+
+}
+.addemail:active{
+    box-shadow: inset 0px 5px 19px 1px black, 0px 5px 19px 1px black ;
+
+
+}
+::-webkit-scrollbar{
+  display: none;
+}
+@media screen and (max-width: 480px){
+  .big{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    font-size: 14px;
+    
+
+  }
+  .addemail{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+  }
+}
+@media screen and (max-width: 350px){
+  .big{
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 84%;
+    font-size: 12px;
+    
+
+  }
+  .addemail{
+    margin-left: 8%;
+    margin-right: 8%;
+
+  }
+  .addemail:hover{
+    transform: scale(1.09);
+  }
 }
