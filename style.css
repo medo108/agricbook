@@ -6,9 +6,7 @@ body {
       font-family: "Noto Sans Arabic", sans-serif;
       border: 8px green groove;
       border-radius: 20px;
-      height: 100vh;
       background-size: 100% 100%; /* ستريتش الصورة */
-      background-repeat: no-repeat;
       
 
 
