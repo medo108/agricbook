@@ -1,0 +1,65 @@
+ body {
+      margin: 0;
+      background: url("");
+      overflow: hidden;
+    }
+
+    .star, .circle {
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .star {
+      width: 5px;
+      height: 5px;
+      background: white;
+      animation: shootStar 3s linear infinite;
+    }
+
+    .circle {
+      width: 30px;
+      height: 30px;
+      background: rgba(255, 255, 255, 0.3);
+      animation: floatCircle 6s ease-in-out infinite;
+    }
+
+    @keyframes shootStar {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      70% {
+        opacity: 1;
+        transform: translateY(-300px) scale(3);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-400px) scale(5);
+      }
+    }
+
+    @keyframes floatCircle {
+      0% {
+        transform: translateY(0) translateX(0) ;
+        opacity: 0.5;
+      }
+      50% {
+        transform: translateY(-100px) translateX(20px) ;
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-200px) translateX(-20px) scale(3);
+        opacity: 0.5;
+      }
+    }
+
+    /* نوزع العناصر عشوائياً */
+
+    .star:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .star:nth-child(2) { left: 30%; animation-delay: 0.5s; }
+    .star:nth-child(3) { left: 60%; animation-delay: 1s; }
+    .star:nth-child(4) { left: 80%; animation-delay: 1.5s; }
+
+    .circle:nth-child(5) { left: 20%; bottom: 0; animation-delay: 0s; }
+    .circle:nth-child(6) { left: 50%; bottom: 0; animation-delay: 1s; }
+    .circle:nth-child(7) { left: 70%; bottom: 0; animation-delay: 2s; }
