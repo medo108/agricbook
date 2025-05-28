@@ -1,18 +1,18 @@
 {
-    "name": "Dr.Metwaly salem",
-    "short_name": "Dr.Metwaly",
+    "name": "Botany one",
+    "short_name": "Botany one",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#1f1e1e",
     "theme_color": "#242424",
     "icons": [
       {
-        "src": "",
+        "src": "https://cdn.jsdelivr.net/gh/medo108/agricbook@medo1/tab%20google%20images/brown/plant_book_icon_192x192.png?raw=true",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "",
+        "src": "https://cdn.jsdelivr.net/gh/medo108/agricbook@medo1/tab%20google%20images/brown/plant_book_icon_512x512.png?raw=true",
         "sizes": "512x512",
         "type": "image/png"
       }
