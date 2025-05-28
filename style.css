@@ -1,7 +1,10 @@
 body {
       margin: 0;
-      background: black;
+      background: url("https://cdn.jsdelivr.net/gh/medo108/agricbook@refs/heads/medo1/images/pexels-shanekell-1363873.webp");
+      background-size: cover;
       overflow: hidden;
+      font-family: "Noto Sans Arabic", sans-serif;
+
     }
 
     .star {
@@ -29,7 +32,7 @@ body {
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(104, 103, 103, 0.616);
       animation: floatAround 6s infinite ease-in-out;
     }
 
@@ -92,4 +95,28 @@ body {
     .circle:nth-child(10) { left: 50%; bottom: 0; animation-delay: 1s; }
     .circle:nth-child(11) { left: 75%; bottom: 0; animation-delay: 2s; }
     
-    
+.big{
+  width: 350px;
+  height: 100px;
+  background: linear-gradient(45deg, #C4CAD0, #878C8F);
+  border: 5px #A4969B ridge;
+  box-shadow: inset 0px 0px 20px 7px black,  0px 20px 19px 1px black;
+  
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 50px;
+  color: #40531B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookname{
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  color: #40531B; /* لون النص */
+  text-shadow:
+    0 0 5px #40531B,
+    0 0 10px #a1e912,
+    0 0 20px #40531B,
+    0 0 40px #aae72e,
+    0 0 80px #40531B;
+}
