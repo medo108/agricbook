@@ -108,12 +108,13 @@ body {
   box-shadow: inset 0px 0px 20px 7px black,  0px 5px 19px 1px black;
   
   margin: auto;
-  margin-top: 10px;
+  margin-top: 80px;
   border-radius: 50px;
   color: #40531B;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .bookname{
   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
@@ -152,7 +153,7 @@ body {
 
   
 }
-.addemail h3{
+.addemail h2{
   color: rgb(70, 61, 55);
   animation: glow 1.6s ease-in-out infinite alternate;
   text-shadow:
@@ -198,6 +199,11 @@ body {
   height: 80px;
   border-radius: 50%;
   background-size: contain;
+}
+.smallimage1{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 @media screen and (max-width: 960px){
   .circle,
