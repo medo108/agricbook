@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/medo108/agricbook@medo1/tab%20google%20images/brown/plant_book_icon_32x32.png?raw=true" type="image/png">
+    <link rel="preload" as="image" href="https://cdn.jsdelivr.net/gh/medo108/agricbook@refs/heads/tester/images/Gemini_Generated_Image_dnaopmdnaopmdnao.webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
- 
-
+  
   <div class="big">
     <h1 class="bookname">كتاب النبات الزراعي </h1>
   </div>
@@ -38,6 +38,41 @@
     </div>
 
   </a>
-  
+  <script>
+   function createStar() {
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.textContent = '★';
+    star.style.left = Math.random() * 100 + '%';
+    star.style.bottom = '0';
+    document.body.appendChild(star);
+    setTimeout(() => star.remove(), 4000);
+  }
+
+  function createExplosion() {
+    const explosion = document.createElement('div');
+    explosion.className = 'explosion';
+    explosion.style.left = Math.random() * 100 + '%';
+    explosion.style.bottom = '0';
+    document.body.appendChild(explosion);
+    setTimeout(() => explosion.remove(), 4000);
+  }
+
+  function createCircle() {
+    const circle = document.createElement('div');
+    circle.className = 'circle';
+    circle.style.left = Math.random() * 100 + '%';
+    circle.style.bottom = '0';
+    document.body.appendChild(circle);
+    setTimeout(() => circle.remove(), 6000);
+  }
+
+  // توليد العناصر بشكل عشوائي بفترات مختلفة
+  setInterval(createStar, 300);       // نجم كل 0.3 ثانية
+  setInterval(createExplosion, 1000); // انفجار كل ثانية
+  setInterval(createCircle, 1500);    // دايرة كل 1.5 ثانية
+  const img = new Image();
+  img.src = "https://cdn.jsdelivr.net/gh/medo108/agricbook@refs/heads/tester/images/Gemini_Generated_Image_dnaopmdnaopmdnao.webp";
+  </script>
 </body>
 </html>

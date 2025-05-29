@@ -11,9 +11,12 @@ body {
 .big{
   width: 350px;
   height: 100px;
+  will-change: transform;
+
   background: linear-gradient(45deg, #C4CAD0, #878C8F);
   border: 5px #A4969B ridge;
-  box-shadow: inset 0px 0px 20px 7px black,  0px 5px 19px 1px black;
+  box-shadow: 0 0 10px black;
+  transform: translateZ(0);
   
   margin: auto;
   margin-top: 80px;
@@ -22,6 +25,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+  
+
 
 }
 .bookname{
@@ -30,10 +36,67 @@ body {
   text-shadow:
     0 0 5px #40531B,
     0 0 10px #a1e912;
-    user-select: none;
+  user-select: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 
 }
+.big:hover{
+  height: 350px;
+  background: url("https://cdn.jsdelivr.net/gh/medo108/agricbook@refs/heads/tester/images/Gemini_Generated_Image_dnaopmdnaopmdnao.webp");
+  background-size: cover;
+  transform: scale(1.2);
+}
+.big:hover .bookname{
+  opacity: 0;
+}
+.star {
+      position: absolute;
+      font-size: 20px;
+      color: white;
+      animation: flyUp 4s ease-in-out forwards;
+      filter: drop-shadow(0 0 5px white);
+      will-change: transform, opacity;
+    }
 
+    .explosion {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: white;
+      opacity: 0;
+      animation: explode 4s ease-in-out forwards;
+      will-change: transform, opacity;
+    }
+
+    .circle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(104, 103, 103, 0.6);
+      animation: floatAround 6s ease-in-out forwards;
+      will-change: transform, opacity;
+    }
+
+    @keyframes flyUp {
+      0%   { transform: translateY(0) scale(0.8); opacity: 1; }
+      70%  { transform: translateY(-300px) scale(1.5); opacity: 1; }
+      100% { transform: translateY(-400px) scale(0.5); opacity: 0; }
+    }
+
+    @keyframes explode {
+      0%, 60% { opacity: 0; transform: scale(0.5); }
+      70% { opacity: 1; transform: scale(3); }
+      100% { opacity: 0; transform: scale(0.5); }
+    }
+
+    @keyframes floatAround {
+      0%   { transform: translateY(0) translateX(0); opacity: 1; }
+      50%  { transform: translateY(-100px) translateX(30px); }
+      100% { transform: translateY(-200px) translateX(-20px); opacity: 0; }
+    }
 .addemail{
   margin-left: 25%;
   margin-right: 25%;
@@ -85,23 +148,28 @@ body {
 .smallimage{
   background: url("https://cdn.jsdelivr.net/gh/medo108/agricbook@md3/images/5dc1c636-0a31-4add-984c-2cca4bfe0e68-removebg-preview.png?raw=true");
   width: 80px;
+  background-repeat: no-repeat;
   height: 80px;
   border-radius: 50%;
   background-size: contain;
 }
 .smallimage1{
+  background: url("https://cdn.jsdelivr.net/gh/medo108/agricbook@tester/images/Gemini_Generated_Image_e58gmhe58gmhe58g-removebg-preview.png?raw=true");
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
-@media screen and (max-width: 960px){
+/* @media screen and (max-width: 960px){
   .circle,
   .explosion,
   .star{
     display: none;
   }
   
-}
+} */
 @media screen and (max-width: 480px){
   .big{
     margin-left: 10%;
@@ -115,6 +183,9 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     
+  }
+  .big:hover{
+    transform: scale(1.1);
   }
 }
 @media screen and (max-width: 350px){
