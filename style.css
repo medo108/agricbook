@@ -1,105 +1,13 @@
 body {
-      margin: 0;
-      background: url("https://cdn.jsdelivr.net/gh/medo108/agricbook@refs/heads/medo1/images/ChatGPT%20Image%2028%20%D9%85%D8%A7%D9%8A%D9%88%202025%D8%8C%2011_55_48%20%D8%B5.webp");
-      background-size: contain;
-      /* overflow: hidden; */
-      font-family: "Noto Sans Arabic", sans-serif;
-      border: 8px green groove;
-      border-radius: 20px;
-      background-size: 100% 100%; /* ستريتش الصورة */
-      
-
-
-    }
-
-    .star {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      color: white;
-      font-size: 20px;
-      animation: flyUp 4s ease-in-out infinite;
-      filter: drop-shadow(0 0 5px white);
-    }
-
-    .explosion {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: white;
-      opacity: 0;
-      animation: explode 4s ease-in-out infinite;
-    }
-
-    .circle {
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: rgba(104, 103, 103, 0.616);
-      animation: floatAround 6s infinite ease-in-out;
-    }
-
-    @keyframes flyUp {
-      0% {
-        transform: translateY(0) scale(0.8);
-        opacity: 1;
-      }
-      70% {
-        transform: translateY(-300px) scale(1.5);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-400px) scale(0.5);
-        opacity: 0;
-      }
-    }
-
-    @keyframes explode {
-      0%, 60% {
-        opacity: 0;
-        transform: scale(0.5);
-      }
-      70% {
-        opacity: 1;
-        transform: scale(3);
-      }
-      100% {
-        opacity: 0;
-        transform: scale(0.5);
-      }
-    }
-
-    @keyframes floatAround {
-      0% {
-        transform: translateY(0) translateX(0);
-      }
-      50% {
-        transform: translateY(-100px) translateX(30px);
-      }
-      100% {
-        transform: translateY(-200px) translateX(-20px);
-      }
-    }
-
-    /* توزيع النجوم */
-    .star:nth-child(1) { left: 10%; bottom: 0; animation-delay: 0s; }
-    .star:nth-child(2) { left: 30%; bottom: 0; animation-delay: 0.7s; }
-    .star:nth-child(3) { left: 60%; bottom: 0; animation-delay: 1.4s; }
-    .star:nth-child(4) { left: 80%; bottom: 0; animation-delay: 2.1s; }
-
-    /* توزيع الانفجارات بنفس أماكن النجوم */
-    .explosion:nth-child(5) { left: 10%; bottom: 0; animation-delay: 0s; }
-    .explosion:nth-child(6) { left: 30%; bottom: 0; animation-delay: 0.7s; }
-    .explosion:nth-child(7) { left: 60%; bottom: 0; animation-delay: 1.4s; }
-    .explosion:nth-child(8) { left: 80%; bottom: 0; animation-delay: 2.1s; }
-
-    /* الدواير */
-    .circle:nth-child(9) { left: 20%; bottom: 0; animation-delay: 0s; }
-    .circle:nth-child(10) { left: 50%; bottom: 0; animation-delay: 1s; }
-    .circle:nth-child(11) { left: 75%; bottom: 0; animation-delay: 2s; }
-    
+  margin: 0;
+  background: url("https://cdn.jsdelivr.net/gh/medo108/agricbook@refs/heads/medo1/images/ChatGPT%20Image%2028%20%D9%85%D8%A7%D9%8A%D9%88%202025%D8%8C%2011_55_48%20%D8%B5.webp");
+  background-size: contain;
+  /* overflow: hidden; */
+  font-family: "Noto Sans Arabic", sans-serif;
+  border: 8px green groove;
+  border-radius: 20px;
+  background-size: 100% 100%; /* ستريتش الصورة */
+}
 .big{
   width: 350px;
   height: 100px;
@@ -121,10 +29,7 @@ body {
   color: #40531B; /* لون النص */
   text-shadow:
     0 0 5px #40531B,
-    0 0 10px #a1e912,
-    0 0 20px #40531B,
-    0 0 40px #aae72e,
-    0 0 80px #40531B;
+    0 0 10px #a1e912;
     user-select: none;
 
 }
@@ -159,27 +64,11 @@ body {
   text-shadow:
     0 0 5px rgb(70, 61, 55),
     0 0 10px #ffb347,
-    0 0 20px #ffb347,
-    0 0 40px #ffcc80,
     0 0 80px #ffe0b2;
     user-select: none;
 
 }
-@keyframes glow {
-  from {
-    text-shadow:
-      0 0 3px rgb(70, 61, 55),
-      0 0 6px #ffb347,
-      0 0 12px #ffcc80;
-  }
-  to {
-    text-shadow:
-      0 0 8px rgb(70, 61, 55),
-      0 0 16px #ffb347,
-      0 0 32px #ffcc80,
-      0 0 64px #ffe0b2;
-  }
-}
+
 .addemail:hover{
   transform: scale(1.2);
   background: linear-gradient(45deg, #F4F3EE,#E0AFA0);
