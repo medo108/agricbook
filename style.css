@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  background: url("https://cdn.jsdelivr.net/gh/medo108/agricbook@refs/heads/medo1/images/ChatGPT%20Image%2028%20%D9%85%D8%A7%D9%8A%D9%88%202025%D8%8C%2011_55_48%20%D8%B5.webp");
+  background: url("https://cdn.jsdelivr.net/gh/medo108/agricbook@refs/heads/tester/images/1748555647745.webp");
   background-size: cover;
   /* overflow: hidden; */
   font-family: "Noto Sans Arabic", sans-serif;
   border: 8px green groove;
   border-radius: 20px;
-  /* background-size: 100% 100%; ستريتش الصورة */
+  /* background-size: 100% 100%;   */
 }
 .big{
   width: 350px;
