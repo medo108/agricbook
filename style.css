@@ -1,12 +1,12 @@
 body {
   margin: 0;
   background: url("https://cdn.jsdelivr.net/gh/medo108/agricbook@refs/heads/medo1/images/ChatGPT%20Image%2028%20%D9%85%D8%A7%D9%8A%D9%88%202025%D8%8C%2011_55_48%20%D8%B5.webp");
-  background-size: contain;
+  background-size: cover;
   /* overflow: hidden; */
   font-family: "Noto Sans Arabic", sans-serif;
   border: 8px green groove;
   border-radius: 20px;
-  background-size: 100% 100%; /* ستريتش الصورة */
+  /* background-size: 100% 100%; ستريتش الصورة */
 }
 .big{
   width: 350px;
@@ -15,7 +15,7 @@ body {
 
   background: linear-gradient(45deg, #C4CAD0, #878C8F);
   border: 5px #A4969B ridge;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black, inset 0 0 10px black;
   transform: translateZ(0);
   
   margin: auto;
@@ -26,6 +26,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-in-out;
+
   
 
 
@@ -46,9 +47,11 @@ body {
   background: url("https://cdn.jsdelivr.net/gh/medo108/agricbook@refs/heads/tester/images/Gemini_Generated_Image_dnaopmdnaopmdnao.webp");
   background-size: cover;
   transform: scale(1.2);
+  align-items: end;
 }
 .big:hover .bookname{
-  opacity: 0;
+  /* opacity: 0; */
+  color: white;
 }
 .star {
       position: absolute;
