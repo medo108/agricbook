@@ -7,6 +7,7 @@ body {
   border: 8px green groove;
   border-radius: 20px;
   /* background-size: 100% 100%;   */
+  overflow-x: hidden;
 }
 .big{
   width: 350px;
@@ -101,14 +102,14 @@ body {
       100% { transform: translateY(-200px) translateX(-20px); opacity: 0; }
     }
 .addemail{
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 29%;
+  margin-right: 29%;
   display: flex;
   justify-content: center;
   align-items:center ;
   text-decoration: none;
   background: linear-gradient(45deg , #BCB8B1, #F4F3EE);
-  border-radius: 50px;
+  
   z-index: 100;
   position: relative;
   z-index: 100;
@@ -117,6 +118,8 @@ body {
   transition: all 0.4s ease;
   margin-bottom: 40px;
   gap: 10px;
+  border-bottom-right-radius: 90px;
+  border-top-left-radius: 90px;
 
 
   
@@ -173,6 +176,14 @@ body {
   }
   
 } */
+ @media screen and (max-width: 910px){
+  .addemail{
+    margin-left: 10%;
+    margin-right:10%;
+    
+
+  }
+ }
 @media screen and (max-width: 480px){
   .big{
     margin-left: 10%;
@@ -183,9 +194,12 @@ body {
 
   }
   .addemail{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
     
+  }
+  .addemail:hover{
+    transform: scale(1.1);
   }
   .big:hover{
     transform: scale(1.1);
@@ -201,8 +215,8 @@ body {
 
   }
   .addemail{
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 7%;
+    margin-right: 7%;
 
   }
   .addemail:hover{
