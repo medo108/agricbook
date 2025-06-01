@@ -9,7 +9,12 @@ body {
     /* background-size: 100% 100%;   */
     overflow-x: hidden;
     position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
   }
+html, body {
+  overflow-x: hidden !important;
+}
 
   .background-animation {
     position: fixed;
@@ -176,7 +181,8 @@ body {
       }
   
       .explosion {
-        position: absolute;
+        /* position: absolute; */
+        position: fixed;
         width: 10px;
         height: 10px;
         border-radius: 50%;
